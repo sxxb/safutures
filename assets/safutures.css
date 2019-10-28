@@ -71,6 +71,7 @@ html {
     /*vertical alignment*/
   }
 }
+
 .titleFont {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -132,380 +133,302 @@ html {
   cursor: default;
   text-decoration: none;
 }
+.mainBodyContainer > a {
+  z-index:0;
+}
+.mainBodyContainer > a:hover {
+  transform: scale(1.05);
+  z-index: 100 !important;
+  cursor:pointer;
+}
 
 #homeBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story story story story story calendar calendar calendar" "guide guide guide services services services volunteer volunteer";
 }
-#homeBodyContainer .grid-hero {
-  grid-area: hero;
-}
-#homeBodyContainer .grid-heroText {
-  grid-area: heroText;
-}
-#homeBodyContainer .grid-story {
-  grid-area: story;
-}
-#homeBodyContainer .grid-guide {
-  grid-area: guide;
-}
-#homeBodyContainer .grid-calendar {
-  grid-area: calendar;
-}
-#homeBodyContainer .grid-volunteer {
-  grid-area: volunteer;
-}
-#homeBodyContainer .grid-services {
-  grid-area: services;
-}
-#homeBodyContainer #homeHero {
-  background: #333;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dc/Adelaide_Convention_Centre.jpg);
-  background-position: bottom;
-  background-size: cover;
-  min-height: 250px;
-  box-shadow: inset 0 0 5rem #111a;
-}
-#homeBodyContainer #homeHeroText {
-  background: #f06363;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-}
-#homeBodyContainer #homeHeroText h3 {
-  font-size: 1.8rem;
-  line-height: 1.9rem;
-  padding-bottom: 1rem;
-}
-#homeBodyContainer #homeHeroText p {
-  color: #fffc;
-}
-#homeBodyContainer #homeStory, #homeBodyContainer #homeVolunteer {
-  background: #23a3e4;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#homeBodyContainer #homeStory:hover, #homeBodyContainer #homeVolunteer:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#homeBodyContainer #homeStory h3, #homeBodyContainer #homeVolunteer h3 {
-  font-size: 1.8rem;
-}
-#homeBodyContainer #homeCalendar {
-  background: #333;
-  color: #fffc;
-  z-index: 0;
-}
-#homeBodyContainer #homeCalendar:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#homeBodyContainer #homeCalendar h3 {
-  font-size: 1.8rem;
-}
-#homeBodyContainer #homeGuide {
-  background: #f06363;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#homeBodyContainer #homeGuide:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#homeBodyContainer #homeGuide h3 {
-  font-size: 1.8rem;
-}
-#homeBodyContainer #homeGuide a {
-  color: #fffc;
-  text-shadow: 0 0 5px #0003;
-  padding: 0;
-  text-decoration: none;
-  transition: 0.2s;
-}
-#homeBodyContainer #homeGuide a:hover {
-  text-decoration: underline;
-}
-#homeBodyContainer #homeServices {
-  background: #f6eb49;
-  color: #333;
-  z-index: 0;
-  transition: 0.2s ease-in;
-}
-#homeBodyContainer #homeServices:hover {
-  transform: scale(1.05);
-  z-index: 100;
-  transition: 0 ease-in;
-}
-#homeBodyContainer #homeServices h3 {
-  font-size: 1.8rem;
-}
+  #homeBodyContainer .grid-hero {
+    grid-area: hero;
+  }
+  #homeBodyContainer .grid-heroText {
+    grid-area: heroText;
+  }
+  #homeBodyContainer .grid-story {
+    grid-area: story;
+  }
+  #homeBodyContainer .grid-guide {
+    grid-area: guide;
+  }
+  #homeBodyContainer .grid-calendar {
+    grid-area: calendar;
+  }
+  #homeBodyContainer .grid-volunteer {
+    grid-area: volunteer;
+  }
+  #homeBodyContainer .grid-services {
+    grid-area: services;
+  }
+  #homeBodyContainer #homeHero {
+    background: #333;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/dc/Adelaide_Convention_Centre.jpg);
+    background-position: bottom;
+    background-size: cover;
+    min-height: 250px;
+    box-shadow: inset 0 0 5rem #111a;
+  }
+  #homeBodyContainer #homeHeroText {
+    background: #f06363;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+  }
+  #homeBodyContainer #homeHeroText h3 {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    padding-bottom: 1rem;
+  }
+  #homeBodyContainer #homeHeroText p {
+    color: #fffc;
+  }
+  #homeBodyContainer #homeStory, #homeBodyContainer #homeVolunteer {
+    background: #23a3e4;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #homeBodyContainer #homeStory h3, #homeBodyContainer #homeVolunteer h3 {
+    font-size: 1.8rem;
+  }
+  #homeBodyContainer #homeCalendar {
+    background: #333;
+    color: #fffc;
+
+  }
+  #homeBodyContainer #homeCalendar h3 {
+    font-size: 1.8rem;
+  }
+  #homeBodyContainer #homeGuide {
+    background: #f06363;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #homeBodyContainer #homeGuide h3 {
+    font-size: 1.8rem;
+  }
+  #homeBodyContainer #homeServices {
+    background: #f6eb49;
+    color: #333;
+  }
+  #homeBodyContainer #homeServices h3 {
+    font-size: 1.8rem;
+  }
 
 #guidesBodyContainer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "hero hero hero heroText" "hero hero hero contribute";
 }
-#guidesBodyContainer .grid-hero {
-  grid-area: hero;
-}
-#guidesBodyContainer .grid-heroText {
-  grid-area: heroText;
-}
-#guidesBodyContainer .grid-contribute {
-  grid-area: contribute;
-}
-#guidesBodyContainer #guidesHero {
-  background-color: #23a3e4;
-  background-image: url("https://www.thoughtco.com/thmb/qicFsReCgYEan06SAmDFlljH1h4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/directions-56a2af253df78cf77278c933.jpg");
-  background-size: cover;
-  background-position: top;
-  min-height: 250px;
-  box-shadow: inset 0 0 5rem #111a;
-  filter: grayscale(1);
-}
-#guidesBodyContainer #guidesHeroText {
-  background: #f06363;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#guidesBodyContainer #guidesHeroText h3 {
-  font-size: 1.8rem;
-}
-#guidesBodyContainer #guideContribute, #guidesBodyContainer #guide3, #guidesBodyContainer #guide5, #guidesBodyContainer #guide11, #guidesBodyContainer #guide16 {
-  background: #23a3e4;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#guidesBodyContainer #guideContribute:hover, #guidesBodyContainer #guide3:hover, #guidesBodyContainer #guide5:hover, #guidesBodyContainer #guide11:hover, #guidesBodyContainer #guide16:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#guidesBodyContainer #guideContribute h3, #guidesBodyContainer #guide3 h3, #guidesBodyContainer #guide5 h3, #guidesBodyContainer #guide11 h3, #guidesBodyContainer #guide16 h3 {
-  font-size: 1.8rem;
-}
-#guidesBodyContainer #guide2, #guidesBodyContainer #guide8, #guidesBodyContainer #guide10, #guidesBodyContainer #guide13 {
-  background: #333;
-  color: #fffc;
-  z-index: 0;
-}
-#guidesBodyContainer #guide2:hover, #guidesBodyContainer #guide8:hover, #guidesBodyContainer #guide10:hover, #guidesBodyContainer #guide13:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#guidesBodyContainer #guide2 h3, #guidesBodyContainer #guide8 h3, #guidesBodyContainer #guide10 h3, #guidesBodyContainer #guide13 h3 {
-  font-size: 1.8rem;
-}
-#guidesBodyContainer #guide1, #guidesBodyContainer #guide7, #guidesBodyContainer #guide9, #guidesBodyContainer #guide12, #guidesBodyContainer #guide15 {
-  background: #f6eb49;
-  color: #333;
-  z-index: 0;
-  transition: 0.2s ease-in;
-}
-#guidesBodyContainer #guide1:hover, #guidesBodyContainer #guide7:hover, #guidesBodyContainer #guide9:hover, #guidesBodyContainer #guide12:hover, #guidesBodyContainer #guide15:hover {
-  transform: scale(1.05);
-  z-index: 100;
-  transition: 0 ease-in;
-}
-#guidesBodyContainer #guide1 h3, #guidesBodyContainer #guide7 h3, #guidesBodyContainer #guide9 h3, #guidesBodyContainer #guide12 h3, #guidesBodyContainer #guide15 h3 {
-  font-size: 1.8rem;
-}
-#guidesBodyContainer #guide4, #guidesBodyContainer #guide6, #guidesBodyContainer #guide12, #guidesBodyContainer #guide14 {
-  background: #f06363;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#guidesBodyContainer #guide4:hover, #guidesBodyContainer #guide6:hover, #guidesBodyContainer #guide12:hover, #guidesBodyContainer #guide14:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#guidesBodyContainer #guide4 h3, #guidesBodyContainer #guide6 h3, #guidesBodyContainer #guide12 h3, #guidesBodyContainer #guide14 h3 {
-  font-size: 1.8rem;
-}
+  #guidesBodyContainer .grid-hero {
+    grid-area: hero;
+  }
+  #guidesBodyContainer .grid-heroText {
+    grid-area: heroText;
+  }
+  #guidesBodyContainer .grid-contribute {
+    grid-area: contribute;
+  }
+  #guidesBodyContainer #guidesHero {
+    background-color: #23a3e4;
+    background-image: url("https://www.thoughtco.com/thmb/qicFsReCgYEan06SAmDFlljH1h4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/directions-56a2af253df78cf77278c933.jpg");
+    background-size: cover;
+    background-position: top;
+    min-height: 250px;
+    box-shadow: inset 0 0 5rem #111a;
+    filter: grayscale(1);
+  }
+  #guidesBodyContainer #guidesHeroText {
+    background: #f06363;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #guidesBodyContainer #guidesHeroText h3 {
+    font-size: 1.8rem;
+  }
+  #guidesBodyContainer #guideContribute, #guidesBodyContainer #guide3, #guidesBodyContainer #guide5, #guidesBodyContainer #guide11, #guidesBodyContainer #guide16 {
+    background: #23a3e4;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #guidesBodyContainer #guideContribute h3, #guidesBodyContainer #guide3 h3, #guidesBodyContainer #guide5 h3, #guidesBodyContainer #guide11 h3, #guidesBodyContainer #guide16 h3 {
+    font-size: 1.8rem;
+  }
+  #guidesBodyContainer #guide2, #guidesBodyContainer #guide8, #guidesBodyContainer #guide10, #guidesBodyContainer #guide13 {
+    background: #333;
+    color: #fffc;
+
+  }
+  #guidesBodyContainer #guide2 h3, #guidesBodyContainer #guide8 h3, #guidesBodyContainer #guide10 h3, #guidesBodyContainer #guide13 h3 {
+    font-size: 1.8rem;
+  }
+  #guidesBodyContainer #guide1, #guidesBodyContainer #guide7, #guidesBodyContainer #guide9, #guidesBodyContainer #guide12, #guidesBodyContainer #guide15 {
+    background: #f6eb49;
+    color: #333;
+  }
+  #guidesBodyContainer #guide1 h3, #guidesBodyContainer #guide7 h3, #guidesBodyContainer #guide9 h3, #guidesBodyContainer #guide12 h3, #guidesBodyContainer #guide15 h3 {
+    font-size: 1.8rem;
+  }
+  #guidesBodyContainer #guide4, #guidesBodyContainer #guide6, #guidesBodyContainer #guide12, #guidesBodyContainer #guide14 {
+    background: #f06363;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #guidesBodyContainer #guide4 h3, #guidesBodyContainer #guide6 h3, #guidesBodyContainer #guide12 h3, #guidesBodyContainer #guide14 h3 {
+    font-size: 1.8rem;
+  }
 
 #storiesBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story1 story1 story2 story2 story2 story2 story3 story3" "story1 story1 contribute contribute contribute contribute story3 story3 ";
 }
-#storiesBodyContainer .grid-hero {
-  grid-area: hero;
-}
-#storiesBodyContainer .grid-heroText {
-  grid-area: heroText;
-}
-#storiesBodyContainer .grid-story1 {
-  grid-area: story1;
-}
-#storiesBodyContainer .grid-story2 {
-  grid-area: story2;
-}
-#storiesBodyContainer .grid-story3 {
-  grid-area: story3;
-}
-#storiesBodyContainer .grid-contribute {
-  grid-area: contribute;
-}
-#storiesBodyContainer #storiesHero {
-  background-image: url("https://images.unsplash.com/photo-1542761472-2655dbf072c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=847&q=80");
-  background-size: cover;
-  background-position: bottom;
-  min-height: 250px;
-  box-shadow: inset 0 0 5rem #111a;
-  filter: grayscale(1);
-}
-#storiesBodyContainer #storiesHeroText {
-  background: #23a3e4;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#storiesBodyContainer #storiesHeroText h3 {
-  font-size: 1.8rem;
-}
-#storiesBodyContainer #storiesExample1 {
-  background: #23a3e4;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#storiesBodyContainer #storiesExample1:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#storiesBodyContainer #storiesExample1 h3 {
-  font-size: 1.8rem;
-}
-#storiesBodyContainer #storiesExample2 {
-  background: #f06363;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#storiesBodyContainer #storiesExample2:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#storiesBodyContainer #storiesExample2 h3 {
-  font-size: 1.8rem;
-}
-#storiesBodyContainer #storiesExample3 {
-  background: #333;
-  color: #fffc;
-  z-index: 0;
-}
-#storiesBodyContainer #storiesExample3:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#storiesBodyContainer #storiesExample3 h3 {
-  font-size: 1.8rem;
-}
-#storiesBodyContainer #storiesContribute {
-  background: #f6eb49;
-  color: #333;
-  z-index: 0;
-  transition: 0.2s ease-in;
-}
-#storiesBodyContainer #storiesContribute:hover {
-  transform: scale(1.05);
-  z-index: 100;
-  transition: 0 ease-in;
-}
-#storiesBodyContainer #storiesContribute h3 {
-  font-size: 1.8rem;
-}
+  #storiesBodyContainer .grid-hero {
+    grid-area: hero;
+  }
+  #storiesBodyContainer .grid-heroText {
+    grid-area: heroText;
+  }
+  #storiesBodyContainer .grid-story1 {
+    grid-area: story1;
+  }
+  #storiesBodyContainer .grid-story2 {
+    grid-area: story2;
+  }
+  #storiesBodyContainer .grid-story3 {
+    grid-area: story3;
+  }
+  #storiesBodyContainer .grid-contribute {
+    grid-area: contribute;
+  }
+  #storiesBodyContainer #storiesHero {
+    background-image: url("https://images.unsplash.com/photo-1542761472-2655dbf072c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=847&q=80");
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    box-shadow: inset 0 0 5rem #111a;
+    filter: grayscale(1);
+  }
+  #storiesBodyContainer #storiesHeroText {
+    background: #23a3e4;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #storiesBodyContainer #storiesHeroText h3 {
+    font-size: 1.8rem;
+  }
+  #storiesBodyContainer #storiesExample1 {
+    background: #23a3e4;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #storiesBodyContainer #storiesExample1 h3 {
+    font-size: 1.8rem;
+  }
+  #storiesBodyContainer #storiesExample2 {
+    background: #f06363;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #storiesBodyContainer #storiesExample2 h3 {
+    font-size: 1.8rem;
+  }
+  #storiesBodyContainer #storiesExample3 {
+    background: #333;
+    color: #fffc;
+
+  }
+  #storiesBodyContainer #storiesExample3 h3 {
+    font-size: 1.8rem;
+  }
+  #storiesBodyContainer #storiesContribute {
+    background: #f6eb49;
+    color: #333;
+  }
+  #storiesBodyContainer #storiesContribute h3 {
+    font-size: 1.8rem;
+  }
 
 #servicesBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "community community government government business business contribute contribute" "community community government government business business contribute contribute ";
 }
-#servicesBodyContainer .grid-hero {
-  grid-area: hero;
-}
-#servicesBodyContainer .grid-heroText {
-  grid-area: heroText;
-}
-#servicesBodyContainer .grid-community {
-  grid-area: community;
-}
-#servicesBodyContainer .grid-government {
-  grid-area: government;
-}
-#servicesBodyContainer .grid-business {
-  grid-area: business;
-}
-#servicesBodyContainer .grid-contribute {
-  grid-area: contribute;
-}
-#servicesBodyContainer #servicesHero {
-  background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-  background-size: cover;
-  background-position: center;
-  min-height: 250px;
-  box-shadow: inset 0 0 5rem #111a;
-  filter: grayscale(1);
-}
-#servicesBodyContainer #servicesHeroText {
-  background: #f6eb49;
-  color: #333;
-  z-index: 0;
-}
-#servicesBodyContainer #servicesHeroText h3 {
-  font-size: 1.8rem;
-}
-#servicesBodyContainer #servicesGovernment {
-  background: #f06363;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#servicesBodyContainer #servicesGovernment:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#servicesBodyContainer #servicesGovernment h3 {
-  font-size: 1.8rem;
-}
-#servicesBodyContainer #servicesCommunity {
-  background: #23a3e4;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-}
-#servicesBodyContainer #servicesCommunity:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#servicesBodyContainer #servicesCommunity h3 {
-  font-size: 1.8rem;
-}
-#servicesBodyContainer #servicesBusiness {
-  background: #333;
-  color: #fffc;
-  z-index: 0;
-}
-#servicesBodyContainer #servicesBusiness:hover {
-  transform: scale(1.05);
-  z-index: 100;
-}
-#servicesBodyContainer #servicesBusiness h3 {
-  font-size: 1.8rem;
-}
-#servicesBodyContainer #servicesContribute {
-  background: #23a3e4;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-  z-index: 0;
-  transition: 0.2s ease-in;
-}
-#servicesBodyContainer #servicesContribute:hover {
-  transform: scale(1.05);
-  z-index: 100;
-  transition: 0 ease-in;
-}
-#servicesBodyContainer #servicesContribute h3 {
-  font-size: 1.8rem;
-}
+  #servicesBodyContainer .grid-hero {
+    grid-area: hero;
+  }
+  #servicesBodyContainer .grid-heroText {
+    grid-area: heroText;
+  }
+  #servicesBodyContainer .grid-community {
+    grid-area: community;
+  }
+  #servicesBodyContainer .grid-government {
+    grid-area: government;
+  }
+  #servicesBodyContainer .grid-business {
+    grid-area: business;
+  }
+  #servicesBodyContainer .grid-contribute {
+    grid-area: contribute;
+  }
+  #servicesBodyContainer #servicesHero {
+    background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    box-shadow: inset 0 0 5rem #111a;
+    filter: grayscale(1);
+  }
+  #servicesBodyContainer #servicesHeroText {
+    background: #f6eb49;
+    color: #333;
+
+  }
+  #servicesBodyContainer #servicesHeroText h3 {
+    font-size: 1.8rem;
+  }
+  #servicesBodyContainer #servicesGovernment {
+    background: #f06363;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #servicesBodyContainer #servicesGovernment h3 {
+    font-size: 1.8rem;
+  }
+  #servicesBodyContainer #servicesCommunity {
+    background: #23a3e4;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+
+  }
+  #servicesBodyContainer #servicesCommunity h3 {
+    font-size: 1.8rem;
+  }
+  #servicesBodyContainer #servicesBusiness {
+    background: #333;
+    color: #fffc;
+
+  }
+  #servicesBodyContainer #servicesBusiness h3 {
+    font-size: 1.8rem;
+  }
+  #servicesBodyContainer #servicesContribute {
+    background: #23a3e4;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+  }
+  #servicesBodyContainer #servicesContribute h3 {
+    font-size: 1.8rem;
+  }
 
 .footerContainer {
   min-height: 5rem;
@@ -514,27 +437,23 @@ html {
   color: #fffb;
   box-shadow: inset 0 -0.25rem 0 #f06363, inset 0 -0.5rem 0 #f6eb49, inset 0 -0.75rem 0 #23a3e4;
 }
-.footerContainer div {
-  margin: auto;
-}
+  .footerContainer div {
+    margin: auto;
+  }
 
 @media (max-width: 800px) {
   .gridContainer {
     display: block;
   }
-
   .mainBodyContainer {
     min-height: 0;
   }
-
   #homeBodyContainer div, #homeBodyContainer a {
     padding: 2rem 20vw;
   }
-
   .headerItemContainer h1 {
     font-size: 1.20rem;
   }
-
   .headerContainer #menuTrigger {
     border: .25rem solid white;
     border-radius: .5rem;
@@ -560,6 +479,7 @@ html {
     padding: 1rem;
   }
 }
+
 .showHeaderMenu {
   display: flex !important;
 }
