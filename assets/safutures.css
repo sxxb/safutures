@@ -173,6 +173,7 @@ html {
     cursor:pointer;
     font-style: italic;
     color:inherit;
+    text-decoration: underline;
     }
 
 #homeBodyContainer {
