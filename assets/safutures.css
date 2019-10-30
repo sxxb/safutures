@@ -162,6 +162,8 @@ html {
   .mainBodyContainer .contentBlock {
     border-bottom:2px solid #fff6;
     padding:0.5rem;
+    height:auto;
+    width:auto;
     }
   .mainBodyContainer h3 {
     font-size:1.8rem;
