@@ -159,6 +159,9 @@ html {
     background: #333;
     color: #fffc;
     }
+  .mainBodyContainer .contentBlock {
+    border-bottom:2px solid #fffa;
+    }
   .mainBodyContainer h3 {
     font-size:1.8rem;
     }
