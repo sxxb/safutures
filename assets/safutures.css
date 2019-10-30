@@ -162,7 +162,7 @@ html {
   .mainBodyContainer h3 {
     font-size:1.8rem;
     }
-  .mainBodyContainer div a {
+  .mainBodyContainer .contentLink {
     padding:.5rem 0;
     height:auto;
     width:auto;
