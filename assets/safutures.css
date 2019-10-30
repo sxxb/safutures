@@ -162,6 +162,13 @@ html {
   .mainBodyContainer h3 {
     font-size:1.8rem;
     }
+  .mainBodyContainer div a {
+    padding:.5rem 0;
+    height:auto;
+    width:auto;
+    cursor:pointer;
+    font-style: italic;
+    }
 
 #homeBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story story story story story calendar calendar calendar" "guide guide guide services services services volunteer volunteer";
@@ -312,6 +319,7 @@ html {
     }
     #contentBodyContainer .grid-content {
       grid-area: content;
+      justify-content: center;
     }
 
 
