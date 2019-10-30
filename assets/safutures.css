@@ -160,10 +160,13 @@ html {
     color: #fffc;
     }
   .mainBodyContainer .contentBlock {
-    border-bottom:2px solid #fff6;
+    border-bottom:3px solid #fff6;
     padding:0.5rem;
     height:auto;
     width:auto;
+    }
+    .mainBodyContainer .contentBlock:last-of-type {
+      border-bottom:0;
     }
   .mainBodyContainer h3 {
     font-size:1.8rem;
