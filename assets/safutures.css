@@ -88,84 +88,84 @@ html {
   padding: 1.5rem 2rem;
   background-color: #23a3e4;
   box-shadow: inset 0 -0.5rem 0 #f06363, inset 0 -1rem 0 #f6eb49;
-}
-.headerContainer #headerMenu {
-  display: flex;
-  width: 70%;
-  max-width: 600px;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 200;
-}
-.headerContainer .headerItemContainer .headerItem {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: white;
-  text-shadow: 0 0 5px #0003;
-}
-.headerContainer .headerItemContainer .headerItem span {
-  display: inline-block;
-  border-bottom: 2px solid #fff0;
-  font-family: "Roboto", monospace;
-}
-.headerContainer .headerItemContainer .headerItem span:hover {
-  transform: translateY(-2px);
-  border-bottom: 2px solid #fff;
-}
-.headerContainer .headerItemContainer .titleFont {
-  font-size: 2rem;
-}
-.headerContainer #menuTrigger {
-  display: none;
-}
+  }
+  .headerContainer #headerMenu {
+    display: flex;
+    width: 70%;
+    max-width: 600px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 200;
+  }
+  .headerContainer .headerItemContainer .headerItem {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px #0003;
+  }
+  .headerContainer .headerItemContainer .headerItem span {
+    display: inline-block;
+    border-bottom: 2px solid #fff0;
+    font-family: "Roboto", monospace;
+  }
+  .headerContainer .headerItemContainer .headerItem span:hover {
+    transform: translateY(-2px);
+    border-bottom: 2px solid #fff;
+  }
+  .headerContainer .headerItemContainer .titleFont {
+    font-size: 2rem;
+  }
+  .headerContainer #menuTrigger {
+    display: none;
+  }
 
 .mainBodyContainer {
   min-height: calc(155vh - 6rem);
   width: 100vw;
-}
-.mainBodyContainer div, .mainBodyContainer a {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  cursor: default;
-  text-decoration: none;
-}
-.mainBodyContainer > a {
-  z-index:0;
-}
-.mainBodyContainer > a:hover {
-  transform: scale(1.05);
-  z-index: 100 !important;
-  cursor:pointer;
-}
-.mainBodyContainer .redBlock {
-  background: #f06363;
-  color: #fffe;
-  text-shadow: 0 0 5px #0003;
-}
-.mainBodyContainer .blueBlock {
-  background: #23a3e4;
-  color: #fff;
-  text-shadow: 0 0 5px #0003;
-}
-.mainBodyContainer .yellowBlock {
-  background: #f6eb49;
-  color: #333;
-}
-.mainBodyContainer .greyBlock {
-  background: #333;
-  color: #fffc;
-}
-.mainBodyContainer h3 {
-  font-size:1.8rem;
-}
+  }
+  .mainBodyContainer div, .mainBodyContainer a {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    cursor: default;
+    text-decoration: none;
+    }
+  .mainBodyContainer > a {
+    z-index:0;
+    }
+  .mainBodyContainer > a:hover {
+    transform: scale(1.05);
+    z-index: 100 !important;
+    cursor:pointer;
+    }
+  .mainBodyContainer .redBlock {
+    background: #f06363;
+    color: #fffe;
+    text-shadow: 0 0 5px #0003;
+    }
+  .mainBodyContainer .blueBlock {
+    background: #23a3e4;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+    }
+  .mainBodyContainer .yellowBlock {
+    background: #f6eb49;
+    color: #333;
+    }
+  .mainBodyContainer .greyBlock {
+    background: #333;
+    color: #fffc;
+    }
+  .mainBodyContainer h3 {
+    font-size:1.8rem;
+    }
 
 #homeBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story story story story story calendar calendar calendar" "guide guide guide services services services volunteer volunteer";
-}
+  }
   #homeBodyContainer .grid-hero {
     grid-area: hero;
   }
@@ -199,7 +199,7 @@ html {
 #guidesBodyContainer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas: "hero hero hero heroText" "hero hero hero contribute";
-}
+  }
   #guidesBodyContainer .grid-hero {
     grid-area: hero;
   }
@@ -221,7 +221,7 @@ html {
 
 #storiesBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story1 story1 story2 story2 story2 story2 story3 story3" "story1 story1 contribute contribute contribute contribute story3 story3 ";
-}
+  }
   #storiesBodyContainer .grid-hero {
     grid-area: hero;
   }
@@ -251,51 +251,68 @@ html {
 
 #servicesBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "community community government government business business contribute contribute" "community community government government business business contribute contribute ";
-}
-  #servicesBodyContainer .grid-hero {
-    grid-area: hero;
   }
-  #servicesBodyContainer .grid-heroText {
-    grid-area: heroText;
-  }
-  #servicesBodyContainer .grid-community {
-    grid-area: community;
-  }
-  #servicesBodyContainer .grid-government {
-    grid-area: government;
-  }
-  #servicesBodyContainer .grid-business {
-    grid-area: business;
-  }
-  #servicesBodyContainer .grid-contribute {
-    grid-area: contribute;
-  }
-  #servicesBodyContainer #servicesHero {
-    background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    box-shadow: inset 0 0 5rem #111a;
-    filter: grayscale(1);
-  }
+    #servicesBodyContainer .grid-hero {
+      grid-area: hero;
+    }
+    #servicesBodyContainer .grid-heroText {
+      grid-area: heroText;
+    }
+    #servicesBodyContainer .grid-community {
+      grid-area: community;
+    }
+    #servicesBodyContainer .grid-government {
+      grid-area: government;
+    }
+    #servicesBodyContainer .grid-business {
+      grid-area: business;
+    }
+    #servicesBodyContainer .grid-contribute {
+      grid-area: contribute;
+    }
+    #servicesBodyContainer #servicesHero {
+      background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 250px;
+      box-shadow: inset 0 0 5rem #111a;
+      filter: grayscale(1);
+    }
 
 #eventsBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText"
-}
-  #eventsBodyContainer .grid-hero {
-    grid-area: hero;
   }
-  #eventsBodyContainer .grid-heroText {
-    grid-area: heroText;
+    #eventsBodyContainer .grid-hero {
+      grid-area: hero;
+    }
+    #eventsBodyContainer .grid-heroText {
+      grid-area: heroText;
+    }
+    #eventsBodyContainer #eventsHero {
+      background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 250px;
+      box-shadow: inset 0 0 5rem #111a;
+      filter: grayscale(1);
+    }
+
+#contentBodyContainer {
+    grid-template-areas:
+    "content content content content content content heroText heroText"
+    "content content content content content content heroText heroText"
+    "content content content content content content back back"
+    "content content content content content content back back"
   }
-  #eventsBodyContainer #eventsHero {
-    background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
-    background-position: center;
-    min-height: 250px;
-    box-shadow: inset 0 0 5rem #111a;
-    filter: grayscale(1);
-  }
+    #contentBodyContainer .grid-heroText {
+      grid-area: heroText;
+    }
+    #contentBodyContainer .grid-back {
+      grid-area: back;
+    }
+    #contentBodyContainer .grid-content {
+      grid-area: content;
+    }
 
 
 .footerContainer {
