@@ -160,7 +160,8 @@ html {
     color: #fffc;
     }
   .mainBodyContainer .contentBlock {
-    border-bottom:2px solid #fffa;
+    border-bottom:2px solid #fff6;
+    padding:0.5rem;
     }
   .mainBodyContainer h3 {
     font-size:1.8rem;
@@ -171,6 +172,7 @@ html {
     width:auto;
     cursor:pointer;
     font-style: italic;
+    color:inherit;
     }
 
 #homeBodyContainer {
