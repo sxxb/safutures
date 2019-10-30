@@ -180,6 +180,9 @@ html {
     color:inherit;
     text-decoration: underline;
     }
+    .mainBodyContainer .contentLink:hover {
+      transform:translateY(-1px);
+    }
 
 #homeBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story story story story story calendar calendar calendar" "guide guide guide services services services volunteer volunteer";
