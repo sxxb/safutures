@@ -10,6 +10,6 @@ $(`#menuTrigger`).click(function() {
 
 
 $(`#contributeFormAction`).click(function() {
-  $(`#contributeContent`).html('<h3>Thank you for submitting your idea!</h3><p>Ideas like yours will help make this site better for people just like you.');
+  $(`#contributeContent`).html('<h3>Thank you for submitting your idea!</h3><p>Ideas like yours will help make this site better for people just like you.</p>');
   console.log('it works');
 });
