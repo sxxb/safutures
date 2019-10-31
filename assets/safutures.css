@@ -343,6 +343,38 @@ html {
       justify-content: center;
     }
 
+.contributeForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 25rem;
+  }
+
+  .contributeForm label {
+    font-style:italic;
+  }
+  .contributeForm select {
+    padding:0.5rem;
+    margin:1rem 0 2rem 0;
+  }
+  .contributeForm textarea {
+    padding:0.5rem;
+    margin:1rem 0 2rem 0;
+    transition:0s;
+  }
+  .contributeForm .contributeFormSubmit {
+    background: #23a3e4;
+    color: #fff;
+    text-shadow: 0 0 5px #0003;
+    font-style:italic;
+    font-weight:normal;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    width: 60%;
+    height:auto;
+    margin: auto;
+  }
 
 .footerContainer {
   min-height: 5rem;

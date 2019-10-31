@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - SA Futures</title>
+    <title>Contribute - SA Futures</title>
     <link rel="stylesheet" type="text/css" href="assets\safutures.css">
 </head>
 
@@ -24,31 +24,34 @@
     </ul>
     <a id="menuTrigger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.88 39.13"><defs><style>.a{fill:#fff;}</style></defs><title>menuHamburger</title><rect class="a" y="15" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect><rect class="a" y="30" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect><rect class="a" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect></svg></a>
   </header>
-
-  <div class="mainBodyContainer gridContainer" id="servicesBodyContainer">
-    <div class="gridItem grid-hero" id="servicesHero"></div>
-    <div class="gridItem grid-heroText yellowBlock" id="servicesHeroText">
-      <h3 class="titleFont">Services</h3>
-      <p>People, organisations and businesses that can help you move to and settle in Adelaide.</p>
-    </div>
-    <a class="gridItem grid-community blueBlock" id="servicesCommunity" href="services\communityservices.html">
-      <h3 class="titleFont">Community Services</h3>
-      <p>Community services, groups and societies</p>
-    </a>
-    <a class="gridItem grid-government redBlock" id="servicesGovernment" href="services\governmentservices.html">
-      <h3 class="titleFont">Government Services</h3>
-      <p>Publicly funded services available for migrants</p>
-    </a>
-      <a class="gridItem grid-business greyBlock" id="servicesBusiness" href="services\businessservices.html">
-      <h3 class="titleFont">Business Services</h3>
-      <p>Private services for potential and new migrants</p>
-    </a>
-    <a class="gridItem grid-contribute blueBlock" id="servicesContribute" href="https://sxxb.github.io/safutures/contribute.html">
+  <div class="mainBodyContainer gridContainer" id="contentBodyContainer">
+    <div class="gridItem grid-heroText redBlock" id="contentHeroText">
       <h3 class="titleFont">Contribute</h3>
-      <p>Do you have a service you can provide to migrants, or maybe you have a suggestion for a new service?</p>
+      <p>Do you have an idea or suggestion that could improve this website? Let us know!</p>
+    </div>
+    <div class="gridItem grid-content yellowBlock" id="contributeContent">
+      <h3 class="titleFont">Contribute</h3>
+      <br>
+      <form class="contributeForm" action="contribute.html" method="post">
+        <label for="section">Which section of the site is your suggestion about?</label>
+        <select class="" name="section">
+          <option value="">Guides</option>
+          <option value="">Stories</option>
+          <option value="">Events</option>
+          <option value="">Services</option>
+          <option value="">Events</option>
+          <option value="">Volunteer</option>
+        </select>
+        <label for="text">What is your suggestion?</label>
+        <textarea name="text" rows="8" cols="40"></textarea>
+        <div class="contributeFormSubmit" id="contributeFormAction">Submit</div>
+      </form>
+    </div>
+    <a class="gridItem grid-back blueBlock" id="contentBack" href="index.html">
+      <h3 class="titleFont">Back</h3>
+      <p>Return to the home page</p>
     </a>
   </div>
-
   <footer class="footerContainer flexContainer">
     <div>
       <p class="bodyFont">SA Futures - By Scott Belcher, Madi Hogben, Ludmilla Tarasenko and Andrea Wu</p>

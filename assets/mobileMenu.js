@@ -7,3 +7,9 @@ $(`#menuTrigger`).click(function() {
       $(`#menuTrigger`).html('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.88 39.13"><defs><style>.a{fill:#fff;}</style></defs><title>menuHamburger</title><rect class="a" y="15" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect><rect class="a" y="30" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect><rect class="a" width="41.88" height="9.12" rx="4.56" ry="4.56"></rect></svg>');
   }
 });
+
+
+$(`#contributeFormAction`).click(function() {
+  $(`#contributeContent`).html('<h3>Thank you for submitting your idea!</h3><p>Ideas like yours will help make this site better for people just like you.');
+  console.log('it works');
+});
