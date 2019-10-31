@@ -182,6 +182,14 @@ html {
     .mainBodyContainer .contentLink:hover {
       transform:translateY(-1px);
     }
+    .mainBodyContainer .contentBlock ul li {
+      list-style-type: disc;
+      margin-left:2rem;
+    }
+    .mainBodyContainer .contentBlock ol li {
+      list-style-type: decimal;
+      margin-left:2rem;
+    }
 
 #homeBodyContainer {
   grid-template-areas: "hero hero hero hero hero hero heroText heroText" "hero hero hero hero hero hero heroText heroText" "story story story story story calendar calendar calendar" "guide guide guide services services services volunteer volunteer";
