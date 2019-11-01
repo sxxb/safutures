@@ -226,7 +226,7 @@ html {
 
 #guidesBodyContainer {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "hero hero hero heroText" "hero hero hero contribute";
+  grid-template-areas: "hero hero hero heroText" "hero hero hero heroText";
   }
   #guidesBodyContainer .grid-hero {
     grid-area: hero;
