@@ -1,4 +1,6 @@
 # safutures
-SA Futures Repo
+SA Futures - Dornwell
 
-permalink: /index.html
+Made by Scott Belcher, Ludmilla Tarasenko, Madi Hogben and Andrea Wu
+
+permalink: https://sxxb.github.io/safutures
