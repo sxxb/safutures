@@ -234,9 +234,6 @@ html {
   #guidesBodyContainer .grid-heroText {
     grid-area: heroText;
   }
-  #guidesBodyContainer .grid-contribute {
-    grid-area: contribute;
-  }
   #guidesBodyContainer #guidesHero {
     background-color: #23a3e4;
     background-image: url("https://www.thoughtco.com/thmb/qicFsReCgYEan06SAmDFlljH1h4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/directions-56a2af253df78cf77278c933.jpg");
